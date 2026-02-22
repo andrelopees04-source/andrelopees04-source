@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acesso Exclusivo | LOPES SINAIS</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+        body { font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #3b82f6, #4f46e5, #9333ea); min-height: 100vh; }
+        .glass-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.3); }
+        .animate-float { animation: float 6s ease-in-out infinite; }
+        @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-10px); } }
+        .cta-button { background: linear-gradient(90deg, #9333ea, #a855f7, #9333ea); background-size: 200% 100%; transition: all 0.4s ease; }
+        .cta-button:hover { background-position: right center; transform: scale(1.03); box-shadow: 0 20px 50px -10px rgba(147, 51, 234, 0.5); }
+    </style>
+
+    <!-- META PIXEL -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+
+        fbq('init', '1843619586318884');
+        fbq('track', 'PageView');
+    </script>
+</head>
+
+<body class="flex items-center justify-center p-4">
+
+    <div class="w-full max-w-md relative z-10 space-y-6">
+        <div class="glass-card rounded-[2.5rem] p-8 shadow-2xl animate-float">
+
+            <div class="flex justify-center mb-6">
+                <div class="relative">
+                    <img src="foto.jpg" alt="Andre Lopes" class="relative w-28 h-28 rounded-full object-cover border-4 border-white shadow-2xl">
+                    <div class="absolute -bottom-1 -right-1 bg-green-500 w-6 h-6 rounded-full border-4 border-white animate-pulse"></div>
+                </div>
+            </div>
+
+            <div class="text-center mb-8">
+                <p class="text-gray-900 font-bold text-lg mb-2">LOPES SINAIS</p>
+
+                <h1 class="text-2xl font-extrabold text-gray-900 leading-tight mb-3">
+                    A estratégia que os casinos<br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-blue-600">
+                        tentam esconder de ti
+                    </span>
+                </h1>
+
+                <p class="text-gray-500 text-sm font-medium">
+                    Partilho gratuitamente no Whatsapp o método exato que utilizo diariamente.
+                </p>
+            </div>
+
+            <div class="space-y-4 mb-8">
+
+                <div class="flex items-center gap-3 text-sm text-gray-700">
+                    <div class="flex-shrink-0 w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
+                        <i data-lucide="check" class="w-4 h-4 text-green-600"></i>
+                    </div>
+                    <span><strong class="text-gray-900">Timing exato:</strong> Quando apostar para ganhar</span>
+                </div>
+
+                <div class="flex items-center gap-3 text-sm text-gray-700">
+                    <div class="flex-shrink-0 w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
+                        <i data-lucide="check" class="w-4 h-4 text-green-600"></i>
+                    </div>
+                    <span><strong class="text-gray-900">Padrões secretos:</strong> Identifica as slots pagadoras</span>
+                </div>
+
+            </div>
+
+            <div class="space-y-4">
+
+                <a href="https://chat.whatsapp.com/L10FKFnwmORJshdnwpwz8b"
+                   target="_blank"
+                   onclick="fbq('track', 'Lead');"
+                   class="cta-button flex items-center justify-center gap-2 w-full h-16 rounded-2xl text-white font-black text-lg shadow-xl group">
+
+                    <span>🔥 QUERO ACESSO GRÁTIS</span>
+                    <i data-lucide="arrow-right" class="w-6 h-6 group-hover:translate-x-1 transition-transform"></i>
+
+                </a>
+
+                <a href="https://wa.me/351912345678?text=Olá,%20quero%20saber%20mais!"
+                   class="flex items-center justify-center gap-2 w-full py-2 text-gray-500 hover:text-green-600 transition-colors text-xs font-bold">
+
+                    <i data-lucide="message-circle" class="w-4 h-4"></i>
+                    Dúvidas? Fala comigo no WhatsApp
+                </a>
+
+                <div class="bg-red-50 border border-red-100 p-3 rounded-2xl">
+                    <p class="text-center text-[11px] text-red-600 font-bold uppercase tracking-tighter">
+                        ⚠️ Apenas 14 vagas disponíveis hoje • Grupo fecha às 23:59h
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+
+</body>
+</html>
