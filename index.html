@@ -10,6 +10,7 @@
 <script src="https://unpkg.com/lucide@latest"></script>
 
 <style>
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
 body{
@@ -58,9 +59,11 @@ display:none;
 z-index:9999;
 max-width:260px;
 }
+
 </style>
 
 <!-- META PIXEL -->
+
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -102,32 +105,19 @@ LOPES SINAIS
 
 <h1 class="text-2xl font-extrabold text-gray-900 leading-tight mb-3">
 
-🔥 Estratégias de Slots todos os dias
-
-<br>
-
-<span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-blue-600">
-
-direto no Telegram
-
-</span>
+📊 Método usado por jogadores para parar de jogar no aleatório
 
 </h1>
 
-<p class="text-gray-500 text-sm font-medium">
+<p class="text-gray-600 text-sm font-medium">
 
-Entre no canal VIP e receba sinais que jogadores estão usando
-para jogar com estratégia — mesmo começando com pouco.
+A maioria das pessoas perde porque joga sem estratégia.
 
-</p>
+Mas existem momentos específicos em que as slots entram
+em ciclos de pagamento.
 
-</div>
-
-<div class="bg-green-50 border border-green-100 p-3 rounded-2xl mb-6">
-
-<p class="text-center text-xs text-green-700 font-bold">
-
-💰 Mais de 3.000 jogadores já estão no canal
+No canal do Telegram eu mostro como identificar esses
+momentos e quando vale a pena entrar.
 
 </p>
 
@@ -142,8 +132,8 @@ para jogar com estratégia — mesmo começando com pouco.
 </div>
 
 <span>
-<strong class="text-gray-900">Sinais em tempo real:</strong>
-Estratégias enviadas todos os dias
+<strong class="text-gray-900">Momento certo:</strong>
+Aprenda quando jogar em vez de apostar no acaso
 </span>
 
 </div>
@@ -155,8 +145,8 @@ Estratégias enviadas todos os dias
 </div>
 
 <span>
-<strong class="text-gray-900">Comece com pouco:</strong>
-Dá para testar a partir de R$20
+<strong class="text-gray-900">Leitura de padrão:</strong>
+Como identificar quando a slot está pagando
 </span>
 
 </div>
@@ -168,8 +158,21 @@ Dá para testar a partir de R$20
 </div>
 
 <span>
-<strong class="text-gray-900">Acesso imediato:</strong>
-Entre e já receba os sinais de hoje
+<strong class="text-gray-900">Alertas ao vivo:</strong>
+Receba sinais das melhores oportunidades
+</span>
+
+</div>
+
+<div class="flex items-center gap-3 text-sm text-gray-700">
+
+<div class="flex-shrink-0 w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
+<i data-lucide="check" class="w-4 h-4 text-green-600"></i>
+</div>
+
+<span>
+<strong class="text-gray-900">Comunidade ativa:</strong>
+Milhares de jogadores acompanhando as estratégias
 </span>
 
 </div>
@@ -184,31 +187,46 @@ onclick="fbq('track','Lead');"
 
 class="cta-button flex items-center justify-center gap-2 w-full h-16 rounded-2xl text-white font-black text-lg shadow-xl group animate-pulse">
 
-🚀 ENTRAR NO CANAL VIP
+🔥 QUERO ACESSO GRÁTIS AO CANAL
 
 <i data-lucide="send" class="w-6 h-6 group-hover:scale-110 transition-transform"></i>
 
 </a>
 
 <p class="text-center text-xs text-gray-400 font-medium">
-Acesso imediato ao canal Telegram
+
+✅ 100% gratuito • 💬 Acesso imediato ao Telegram
+
 </p>
 
 <div class="bg-red-50 border border-red-100 p-3 rounded-2xl">
 
 <p class="text-center text-[11px] text-red-600 font-bold uppercase tracking-tight">
-⚠️ Vagas do grupo VIP liberadas hoje
+
+⚠️ O canal abre vagas apenas algumas vezes por dia
+
 </p>
 
 </div>
 
+<div class="text-center text-xs text-gray-500 font-semibold">
+
+🔥 1.583 pessoas entraram nas últimas 24 horas
+
 </div>
+
+<div class="text-center text-xs text-yellow-600 font-semibold">
+
+⭐ Avaliação média do canal: 4.9 / 5
 
 </div>
 
 </div>
 
-<!-- POPUP SOCIAL PROOF -->
+</div>
+
+</div>
+
 <div id="popup" class="popup">
 <span id="popupText"></span>
 </div>
@@ -217,9 +235,9 @@ Acesso imediato ao canal Telegram
 
 lucide.createIcons();
 
-const mensagens = [
+const mensagens=[
 
-"💰 Carlos acabou de ganhar R$320 usando os sinais",
+"💰 Carlos ganhou R$320 usando os sinais",
 "🔥 Ana entrou no canal VIP agora",
 "💸 João sacou R$540 hoje",
 "🚀 Pedro acabou de entrar no grupo",
@@ -232,12 +250,12 @@ const mensagens = [
 
 function mostrarPopup(){
 
-const popup = document.getElementById("popup");
-const texto = document.getElementById("popupText");
+const popup=document.getElementById("popup");
+const texto=document.getElementById("popupText");
 
-const mensagem = mensagens[Math.floor(Math.random()*mensagens.length)];
+const mensagem=mensagens[Math.floor(Math.random()*mensagens.length)];
 
-texto.innerText = mensagem;
+texto.innerText=mensagem;
 
 popup.style.display="block";
 
