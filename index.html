@@ -1,142 +1,208 @@
 <!DOCTYPE html>
 <html lang="pt-PT">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acesso Exclusivo | LOPES SINAIS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/lucide@latest"></script>
+<title>Acesso Exclusivo | LOPES SINAIS</title>
 
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
-        body { 
-            font-family: 'Inter', sans-serif; 
-            background: linear-gradient(135deg, #3b82f6, #4f46e5, #9333ea); 
-            min-height: 100vh; 
-        }
-        .glass-card { 
-            background: rgba(255, 255, 255, 0.95); 
-            backdrop-filter: blur(20px); 
-            border: 1px solid rgba(255, 255, 255, 0.3); 
-        }
-        .animate-float { 
-            animation: float 6s ease-in-out infinite; 
-        }
-        @keyframes float { 
-            0%, 100% { transform: translateY(0px); } 
-            50% { transform: translateY(-10px); } 
-        }
-        .cta-button { 
-            background: linear-gradient(90deg, #9333ea, #a855f7, #9333ea); 
-            background-size: 200% 100%; 
-            transition: all 0.4s ease; 
-        }
-        .cta-button:hover { 
-            background-position: right center; 
-            transform: scale(1.05); 
-            box-shadow: 0 20px 50px -10px rgba(147, 51, 234, 0.6); 
-        }
-    </style>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
 
-    <!-- META PIXEL -->
-    <script>
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
-        fbq('init', '1843619586318884');
-        fbq('track', 'PageView');
-    </script>
+body{
+font-family:'Inter',sans-serif;
+background:linear-gradient(135deg,#3b82f6,#4f46e5,#9333ea);
+min-height:100vh;
+}
+
+.glass-card{
+background:rgba(255,255,255,0.95);
+backdrop-filter:blur(20px);
+border:1px solid rgba(255,255,255,0.3);
+}
+
+.animate-float{
+animation:float 6s ease-in-out infinite;
+}
+
+@keyframes float{
+0%,100%{transform:translateY(0px)}
+50%{transform:translateY(-10px)}
+}
+
+.cta-button{
+background:linear-gradient(90deg,#9333ea,#a855f7,#9333ea);
+background-size:200% 100%;
+transition:all .4s ease;
+}
+
+.cta-button:hover{
+background-position:right center;
+transform:scale(1.05);
+box-shadow:0 20px 50px -10px rgba(147,51,234,.6);
+}
+</style>
+
+<!-- META PIXEL -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init','1843619586318884');
+fbq('track','PageView');
+</script>
+
 </head>
 
 <body class="flex items-center justify-center p-4">
 
-    <div class="w-full max-w-md relative z-10 space-y-6">
-        <div class="glass-card rounded-[2.5rem] p-8 shadow-2xl animate-float">
+<div class="w-full max-w-md relative z-10 space-y-6">
 
-            <!-- FOTO -->
-            <div class="flex justify-center mb-6">
-                <div class="relative">
-                    <img src="foto.jpg" alt="Atendimento Oficial" class="relative w-28 h-28 rounded-full object-cover border-4 border-white shadow-2xl">
-                    <div class="absolute -bottom-1 -right-1 bg-green-500 w-6 h-6 rounded-full border-4 border-white animate-pulse"></div>
-                </div>
-            </div>
+<div class="glass-card rounded-[2.5rem] p-8 shadow-2xl animate-float">
 
-            <!-- TÍTULO -->
-            <div class="text-center mb-8">
-                <p class="text-gray-900 font-bold text-lg mb-2">LOPES SINAIS</p>
+<!-- FOTO -->
+<div class="flex justify-center mb-6">
+<div class="relative">
 
-                <h1 class="text-2xl font-extrabold text-gray-900 leading-tight mb-3">
-                    Ative hoje seu bônus exclusivo<br>
-                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-blue-600">
-                        e comece com valor baixo
-                    </span>
-                </h1>
+<img src="foto.jpg"
+class="relative w-28 h-28 rounded-full object-cover border-4 border-white shadow-2xl">
 
-                <p class="text-gray-500 text-sm font-medium">
-                    Explico tudo no WhatsApp de forma simples, mesmo para iniciantes.
-                </p>
-            </div>
+<div class="absolute -bottom-1 -right-1 bg-green-500 w-6 h-6 rounded-full border-4 border-white animate-pulse"></div>
 
-            <!-- BENEFÍCIOS -->
-            <div class="space-y-4 mb-8">
+</div>
+</div>
 
-                <div class="flex items-center gap-3 text-sm text-gray-700">
-                    <div class="flex-shrink-0 w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
-                        <i data-lucide="check" class="w-4 h-4 text-green-600"></i>
-                    </div>
-                    <span><strong class="text-gray-900">Comece com pouco:</strong> A partir de R$20 para testar</span>
-                </div>
+<!-- TÍTULO -->
+<div class="text-center mb-6">
 
-                <div class="flex items-center gap-3 text-sm text-gray-700">
-                    <div class="flex-shrink-0 w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
-                        <i data-lucide="check" class="w-4 h-4 text-green-600"></i>
-                    </div>
-                    <span><strong class="text-gray-900">Suporte direto:</strong> Te acompanho no passo a passo</span>
-                </div>
+<p class="text-gray-900 font-bold text-lg mb-2">
+LOPES SINAIS
+</p>
 
-            </div>
+<h1 class="text-2xl font-extrabold text-gray-900 leading-tight mb-3">
 
-            <!-- CTA -->
-            <div class="space-y-4">
+Receba sinais do Fortune Tiger<br>
 
-                <a href="https://wa.me/5573999014896?text=🔥%20Quero%20ativar%20meu%20bônus%20hoje%20e%20começar%20agora"
-                   target="_blank"
-                   onclick="fbq('track', 'Lead');"
-                   class="cta-button flex items-center justify-center gap-2 w-full h-16 rounded-2xl text-white font-black text-lg shadow-xl group animate-pulse">
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-blue-600">
 
-                    🚀🔥 ATIVAR BÔNUS AGORA
-                    <i data-lucide="flame" class="w-6 h-6 group-hover:scale-110 transition-transform"></i>
+direto no Telegram
 
-                </a>
+</span>
 
-                <a href="https://wa.me/5573999014896?text=Tenho%20dúvida%20sobre%20como%20funciona"
-                   class="flex items-center justify-center gap-2 w-full py-2 text-gray-500 hover:text-green-600 transition-colors text-xs font-bold">
+</h1>
 
-                    <i data-lucide="message-circle" class="w-4 h-4"></i>
-                    Dúvidas? Fala comigo no WhatsApp
-                </a>
+<p class="text-gray-500 text-sm font-medium">
 
-                <div class="bg-red-50 border border-red-100 p-3 rounded-2xl">
-                    <p class="text-center text-[11px] text-red-600 font-bold uppercase tracking-tight">
-                        ⚠️ Últimas ativações disponíveis hoje • Atendimento até às 22h
-                    </p>
-                </div>
+Entre no canal VIP e receba estratégias todos os dias.
 
-            </div>
+</p>
 
-        </div>
-    </div>
+</div>
 
-    <script>
-        lucide.createIcons();
-    </script>
+<!-- PROVA SOCIAL -->
+<div class="bg-green-50 border border-green-100 p-3 rounded-2xl mb-6">
+
+<p class="text-center text-xs text-green-700 font-bold">
+
+🔥 Mais de 3.000 jogadores já estão no canal
+
+</p>
+
+</div>
+
+<!-- BENEFÍCIOS -->
+<div class="space-y-4 mb-8">
+
+<div class="flex items-center gap-3 text-sm text-gray-700">
+
+<div class="flex-shrink-0 w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
+<i data-lucide="check" class="w-4 h-4 text-green-600"></i>
+</div>
+
+<span>
+<strong class="text-gray-900">Sinais ao vivo:</strong>
+Estratégias todos os dias
+</span>
+
+</div>
+
+<div class="flex items-center gap-3 text-sm text-gray-700">
+
+<div class="flex-shrink-0 w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
+<i data-lucide="check" class="w-4 h-4 text-green-600"></i>
+</div>
+
+<span>
+<strong class="text-gray-900">Comece com pouco:</strong>
+A partir de R$20
+</span>
+
+</div>
+
+<div class="flex items-center gap-3 text-sm text-gray-700">
+
+<div class="flex-shrink-0 w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
+<i data-lucide="check" class="w-4 h-4 text-green-600"></i>
+</div>
+
+<span>
+<strong class="text-gray-900">Acesso imediato:</strong>
+Entre e receba sinais hoje
+</span>
+
+</div>
+
+</div>
+
+<!-- CTA -->
+<div class="space-y-4">
+
+<a href="https://t.me/lopesinais"
+target="_blank"
+onclick="fbq('track','Lead');"
+
+class="cta-button flex items-center justify-center gap-2 w-full h-16 rounded-2xl text-white font-black text-lg shadow-xl group animate-pulse">
+
+🚀 ENTRAR NO CANAL VIP
+
+<i data-lucide="send" class="w-6 h-6 group-hover:scale-110 transition-transform"></i>
+
+</a>
+
+<p class="text-center text-xs text-gray-400 font-medium">
+
+Acesso imediato ao canal Telegram
+
+</p>
+
+<div class="bg-red-50 border border-red-100 p-3 rounded-2xl">
+
+<p class="text-center text-[11px] text-red-600 font-bold uppercase tracking-tight">
+
+⚠️ Vagas do grupo VIP liberadas hoje
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+lucide.createIcons();
+</script>
 
 </body>
 </html>
