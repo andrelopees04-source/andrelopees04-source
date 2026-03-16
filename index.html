@@ -60,9 +60,18 @@ z-index:9999;
 max-width:260px;
 }
 
-</style>
+/* Garante que o container do bot tenha um tamanho bom */
+.typebot-container {
+  width: 100%;
+  height: 600px; /* Altura ideal para mobile e desktop */
+  border-radius: 1.5rem; /* rounded-3xl do Tailwind */
+  overflow: hidden;
+  border: 1px solid rgba(229, 231, 235, 1); /* border-gray-200 */
+  background-color: rgba(249, 250, 251, 1); /* bg-gray-50 */
+  box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.05); /* shadow-inner */
+}
 
-<!-- META PIXEL -->
+</style>
 
 <script>
 !function(f,b,e,v,n,t,s)
@@ -104,77 +113,24 @@ LOPES SINAIS
 </p>
 
 <h1 class="text-2xl font-extrabold text-gray-900 leading-tight mb-3">
-
-📊 Método usado por jogadores para parar de jogar no aleatório
-
+📊 Método para parar de jogar no aleatório
 </h1>
 
-<p class="text-gray-600 text-sm font-medium">
-
-A maioria das pessoas perde porque joga sem estratégia.
-
-Mas existem momentos específicos em que as slots entram
-em ciclos de pagamento.
-
-No canal do Telegram eu mostro como identificar esses
-momentos e quando vale a pena entrar.
-
-</p>
-
 </div>
 
-<div class="space-y-4 mb-8">
-
-<div class="flex items-center gap-3 text-sm text-gray-700">
-<div class="flex-shrink-0 w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
-<i data-lucide="check" class="w-4 h-4 text-green-600"></i>
-</div>
-<span><strong>Momento certo:</strong> Aprenda quando jogar em vez de apostar no acaso</span>
-</div>
-
-<div class="flex items-center gap-3 text-sm text-gray-700">
-<div class="flex-shrink-0 w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
-<i data-lucide="check" class="w-4 h-4 text-green-600"></i>
-</div>
-<span><strong>Leitura de padrão:</strong> Como identificar quando a slot está pagando</span>
-</div>
-
-<div class="flex items-center gap-3 text-sm text-gray-700">
-<div class="flex-shrink-0 w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
-<i data-lucide="check" class="w-4 h-4 text-green-600"></i>
-</div>
-<span><strong>Alertas ao vivo:</strong> Receba sinais das melhores oportunidades</span>
-</div>
-
-<div class="flex items-center gap-3 text-sm text-gray-700">
-<div class="flex-shrink-0 w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
-<i data-lucide="check" class="w-4 h-4 text-green-600"></i>
-</div>
-<span><strong>Comunidade ativa:</strong> Milhares de jogadores acompanhando as estratégias</span>
-</div>
-
+<div class="typebot-container mb-6">
+  <typebot-standard typebot="my-typebot-kvlftr4" style="width: 100%; height: 100%;"></typebot-standard>
 </div>
 
 <div class="space-y-4">
 
-<a href="https://t.me/lopesinais"
-target="_blank"
-onclick="fbq('track','Lead');"
-class="cta-button flex items-center justify-center gap-2 w-full py-4 rounded-2xl text-white font-black text-lg shadow-xl group animate-pulse text-center">
-
-🚀 ACESSAR O CANAL VIP
-
-<i data-lucide="send" class="w-6 h-6 group-hover:scale-110 transition-transform"></i>
-
-</a>
-
 <p class="text-center text-xs text-gray-400 font-medium">
-✅ 100% gratuito • 💬 Acesso imediato ao Telegram
+✅ 100% gratuito • 💬 Acesso imediato pelo Chat
 </p>
 
 <div class="bg-red-50 border border-red-100 p-3 rounded-2xl">
 <p class="text-center text-[11px] text-red-600 font-bold uppercase tracking-tight">
-⚠️ O canal abre vagas apenas algumas vezes por dia
+⚠️ As sessões de alavancagem têm vagas limitadas
 </p>
 </div>
 
@@ -183,7 +139,7 @@ class="cta-button flex items-center justify-center gap-2 w-full py-4 rounded-2xl
 </div>
 
 <div class="text-center text-xs text-yellow-600 font-semibold">
-⭐ Avaliação média do canal: 4.9 / 5
+⭐ Avaliação média: 4.9 / 5
 </div>
 
 </div>
@@ -196,43 +152,11 @@ class="cta-button flex items-center justify-center gap-2 w-full py-4 rounded-2xl
 <span id="popupText"></span>
 </div>
 
-<script>
-
-lucide.createIcons();
-
-const mensagens=[
-
-"💰 Carlos ganhou R$320 usando os sinais",
-"🔥 Ana entrou no canal VIP agora",
-"💸 João sacou R$540 hoje",
-"🚀 Pedro acabou de entrar no grupo",
-"💰 Lucas ganhou R$270 com as estratégias",
-"🔥 Mariana entrou no canal agora",
-"💸 Rafael sacou R$610 hoje",
-"🚀 Fernanda acabou de entrar no VIP"
-
-];
-
-function mostrarPopup(){
-
-const popup=document.getElementById("popup");
-const texto=document.getElementById("popupText");
-
-const mensagem=mensagens[Math.floor(Math.random()*mensagens.length)];
-
-texto.innerText=mensagem;
-
-popup.style.display="block";
-
-setTimeout(()=>{
-popup.style.display="none";
-},4000);
-
-}
-
-setInterval(mostrarPopup,9000);
-
+<script type="module">
+  import Typebot from 'https://cdn.jsdelivr.net/npm/@typebot.io/js@0.3/dist/web.js'
+  Typebot.initStandard({ typebot: 'my-typebot-kvlftr4' })
 </script>
 
-</body>
-</html>
+<script>
+
+lucide
