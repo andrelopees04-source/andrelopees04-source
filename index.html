@@ -1,162 +1,159 @@
 <!DOCTYPE html>
 <html lang="pt-PT">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Acesso Exclusivo | LOPES SINAIS</title>
+    <title>Acesso Exclusivo | LOPES SINAIS</title>
 
-<script src="https://cdn.tailwindcss.com"></script>
-<script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
 
-<style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #3b82f6, #4f46e5, #9333ea);
+            min-height: 100vh;
+        }
 
-body{
-font-family:'Inter',sans-serif;
-background:linear-gradient(135deg,#3b82f6,#4f46e5,#9333ea);
-min-height:100vh;
-}
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
 
-.glass-card{
-background:rgba(255,255,255,0.95);
-backdrop-filter:blur(20px);
-border:1px solid rgba(255,255,255,0.3);
-}
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
 
-.animate-float{
-animation:float 6s ease-in-out infinite;
-}
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) }
+            50% { transform: translateY(-10px) }
+        }
 
-@keyframes float{
-0%,100%{transform:translateY(0px)}
-50%{transform:translateY(-10px)}
-}
+        .cta-button {
+            background: linear-gradient(90deg, #9333ea, #a855f7, #9333ea);
+            background-size: 200% 100%;
+            transition: all .4s ease;
+        }
 
-.cta-button{
-background:linear-gradient(90deg,#9333ea,#a855f7,#9333ea);
-background-size:200% 100%;
-transition:all .4s ease;
-}
+        .cta-button:hover {
+            background-position: right center;
+            transform: scale(1.05);
+            box-shadow: 0 20px 50px -10px rgba(147, 51, 234, .6);
+        }
 
-.cta-button:hover{
-background-position:right center;
-transform:scale(1.05);
-box-shadow:0 20px 50px -10px rgba(147,51,234,.6);
-}
+        .popup {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background: white;
+            padding: 14px 18px;
+            border-radius: 14px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            font-size: 13px;
+            display: none;
+            z-index: 9999;
+            max-width: 260px;
+        }
+    </style>
 
-.popup{
-position:fixed;
-bottom:20px;
-left:20px;
-background:white;
-padding:14px 18px;
-border-radius:14px;
-box-shadow:0 10px 30px rgba(0,0,0,0.2);
-font-size:13px;
-display:none;
-z-index:9999;
-max-width:260px;
-}
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window,document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
 
-/* Garante que o container do bot tenha um tamanho bom */
-.typebot-container {
-  width: 100%;
-  height: 600px; /* Altura ideal para mobile e desktop */
-  border-radius: 1.5rem; /* rounded-3xl do Tailwind */
-  overflow: hidden;
-  border: 1px solid rgba(229, 231, 235, 1); /* border-gray-200 */
-  background-color: rgba(249, 250, 251, 1); /* bg-gray-50 */
-  box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.05); /* shadow-inner */
-}
-
-</style>
-
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window,document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-
-fbq('init','1843619586318884');
-fbq('track','PageView');
-</script>
-
+        fbq('init', '1843619586318884');
+        fbq('track', 'PageView');
+    </script>
 </head>
 
 <body class="flex items-center justify-center p-4">
 
-<div class="w-full max-w-md relative z-10 space-y-6">
+    <div class="w-full max-w-md relative z-10 space-y-6">
 
-<div class="glass-card rounded-[2.5rem] p-8 shadow-2xl animate-float">
+        <div class="glass-card rounded-[2.5rem] p-8 shadow-2xl animate-float">
 
-<div class="flex justify-center mb-6">
-<div class="relative">
+            <div class="flex justify-center mb-6">
+                <div class="relative">
+                    <img src="foto.jpg" class="relative w-28 h-28 rounded-full object-cover border-4 border-white shadow-2xl">
+                    <div class="absolute -bottom-1 -right-1 bg-green-500 w-6 h-6 rounded-full border-4 border-white animate-pulse"></div>
+                </div>
+            </div>
 
-<img src="foto.jpg"
-class="relative w-28 h-28 rounded-full object-cover border-4 border-white shadow-2xl">
+            <div class="text-center mb-6">
+                <p class="text-gray-900 font-bold text-lg mb-2">LOPES SINAIS</p>
+                <h1 class="text-2xl font-extrabold text-gray-900 leading-tight mb-3">
+                    📊 Método para parar de jogar no aleatório
+                </h1>
+            </div>
 
-<div class="absolute -bottom-1 -right-1 bg-green-500 w-6 h-6 rounded-full border-4 border-white animate-pulse"></div>
+            <div class="space-y-4">
+                <a href="https://t.me/tipswinlinebot?start=cmmtupst702f8jv07u388g78k" 
+                   onclick="fbq('track', 'Lead');"
+                   class="cta-button w-full py-5 rounded-2xl text-white font-extrabold text-lg flex items-center justify-center gap-3 shadow-lg uppercase tracking-wider text-center block">
+                    <i data-lucide="zap" class="w-6 h-6"></i>
+                    INICIAR NO CHAT AGORA
+                </a>
 
-</div>
-</div>
+                <p class="text-center text-xs text-gray-400 font-medium">
+                    ✅ 100% gratuito • 💬 Acesso imediato pelo Telegram
+                </p>
 
-<div class="text-center mb-6">
+                <div class="bg-red-50 border border-red-100 p-3 rounded-2xl">
+                    <p class="text-center text-[11px] text-red-600 font-bold uppercase tracking-tight">
+                        ⚠️ VAGAS DE HOJE QUASE ESGOTADAS
+                    </p>
+                </div>
 
-<p class="text-gray-900 font-bold text-lg mb-2">
-LOPES SINAIS
-</p>
+                <div class="text-center text-xs text-gray-500 font-semibold">
+                    🔥 1.583 pessoas entraram nas últimas 24 horas
+                </div>
 
-<h1 class="text-2xl font-extrabold text-gray-900 leading-tight mb-3">
-📊 Método para parar de jogar no aleatório
-</h1>
+                <div class="text-center text-xs text-yellow-600 font-semibold">
+                    ⭐ Avaliação média: 4.9 / 5
+                </div>
+            </div>
 
-</div>
+        </div>
 
-<div class="typebot-container mb-6">
-  <typebot-standard typebot="my-typebot-kvlftr4" style="width: 100%; height: 100%;"></typebot-standard>
-</div>
+    </div>
 
-<div class="space-y-4">
+    <script>
+        // Inicializa os ícones do Lucide
+        lucide.createIcons();
 
-<p class="text-center text-xs text-gray-400 font-medium">
-✅ 100% gratuito • 💬 Acesso imediato pelo Chat
-</p>
+        // Popup de prova social simulada (opcional)
+        setTimeout(() => {
+            const names = ['Pedro', 'Lucas', 'Mariana', 'André', 'Ricardo', 'João'];
+            const popup = document.getElementById('popup');
+            const popupText = document.getElementById('popupText');
+            
+            function showPopup() {
+                const name = names[Math.floor(Math.random() * names.length)];
+                popupText.innerHTML = `✅ <b>${name}</b> acabou de lucrar no VIP!`;
+                popup.style.display = 'block';
+                
+                setTimeout(() => {
+                    popup.style.display = 'none';
+                }, 4000);
+            }
 
-<div class="bg-red-50 border border-red-100 p-3 rounded-2xl">
-<p class="text-center text-[11px] text-red-600 font-bold uppercase tracking-tight">
-⚠️ As sessões de alavancagem têm vagas limitadas
-</p>
-</div>
+            setInterval(showPopup, 12000);
+            showPopup();
+        }, 3000);
+    </script>
 
-<div class="text-center text-xs text-gray-500 font-semibold">
-🔥 1.583 pessoas entraram nas últimas 24 horas
-</div>
+    <div id="popup" class="popup">
+        <span id="popupText"></span>
+    </div>
 
-<div class="text-center text-xs text-yellow-600 font-semibold">
-⭐ Avaliação média: 4.9 / 5
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div id="popup" class="popup">
-<span id="popupText"></span>
-</div>
-
-<script type="module">
-  import Typebot from 'https://cdn.jsdelivr.net/npm/@typebot.io/js@0.3/dist/web.js'
-  Typebot.initStandard({ typebot: 'my-typebot-kvlftr4' })
-</script>
-
-<script>
-
-lucide
+</body>
+</html>
