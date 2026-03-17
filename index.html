@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Acesso Exclusivo | LOPES SINAIS</title>
+    <title>Acesso Exclusivo | LOPES SINAIS 97%</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -14,14 +14,15 @@
 
         body {
             font-family: 'Inter', sans-serif;
-            background: linear-gradient(135deg, #3b82f6, #4f46e5, #9333ea);
+            background: linear-gradient(135deg, #111827, #1f2937, #111827);
             min-height: 100vh;
+            color: white;
         }
 
         .glass-card {
-            background: rgba(255, 255, 255, 0.95);
+            background: rgba(17, 24, 39, 0.8);
             backdrop-filter: blur(20px);
-            border: 1px solid rgba(255, 255, 255, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.05);
         }
 
         .animate-float {
@@ -34,7 +35,7 @@
         }
 
         .cta-button {
-            background: linear-gradient(90deg, #9333ea, #a855f7, #9333ea);
+            background: linear-gradient(90deg, #10b981, #34d399, #10b981);
             background-size: 200% 100%;
             transition: all .4s ease;
         }
@@ -42,21 +43,29 @@
         .cta-button:hover {
             background-position: right center;
             transform: scale(1.05);
-            box-shadow: 0 20px 50px -10px rgba(147, 51, 234, .6);
+            box-shadow: 0 20px 50px -10px rgba(16, 185, 129, 0.6);
         }
 
         .popup {
             position: fixed;
             bottom: 20px;
             left: 20px;
-            background: white;
-            padding: 14px 18px;
-            border-radius: 14px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-            font-size: 13px;
+            background: #fff;
+            color: #111;
+            padding: 16px 20px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            font-size: 14px;
             display: none;
             z-index: 9999;
-            max-width: 260px;
+            max-width: 300px;
+            border: 2px solid #10b981;
+        }
+        
+        .badge-green {
+            background-color: #064e3b;
+            color: #34d399;
+            border: 1px solid #059669;
         }
     </style>
 
@@ -77,48 +86,74 @@
 
 <body class="flex items-center justify-center p-4">
 
-    <div class="w-full max-w-md relative z-10 space-y-6">
+    <div class="w-full max-w-lg relative z-10 space-y-6">
 
         <div class="glass-card rounded-[2.5rem] p-8 shadow-2xl animate-float">
 
             <div class="flex justify-center mb-6">
                 <div class="relative">
-                    <img src="foto.jpg" class="relative w-28 h-28 rounded-full object-cover border-4 border-white shadow-2xl">
-                    <div class="absolute -bottom-1 -right-1 bg-green-500 w-6 h-6 rounded-full border-4 border-white animate-pulse"></div>
+                    <img src="foto.jpg" class="relative w-28 h-28 rounded-full object-cover border-4 border-[#1f2937] shadow-2xl">
+                    <div class="absolute -bottom-1 -right-1 bg-green-500 w-6 h-6 rounded-full border-4 border-[#1f2937] animate-pulse"></div>
                 </div>
             </div>
 
-            <div class="text-center mb-6">
-                <p class="text-gray-900 font-bold text-lg mb-2">LOPES SINAIS</p>
-                <h1 class="text-2xl font-extrabold text-gray-900 leading-tight mb-3">
-                    📊 Método para parar de jogar no aleatório
+            <div class="text-center mb-8">
+                <div class="inline-flex items-center gap-2 badge-green px-4 py-1 rounded-full text-xs font-semibold mb-4">
+                    <i data-lucide="shield-check" class="w-4 h-4"></i>
+                    SISTEMA VERIFICADO PELA PLATAFORMA
+                </div>
+                <p class="text-gray-400 font-medium text-sm mb-2">MÉTODO LOPES SINAIS</p>
+                <h1 class="text-3xl font-extrabold text-white leading-tight mb-3">
+                    💰 Pare de Perder e Comece a Lucrar com <span class="text-green-400">Assertividade de 97%</span>
                 </h1>
+                <p class="text-gray-300 text-base max-w-sm mx-auto">
+                    Timing correto, sinais sem gale e robô exclusivo. Pegue sua vaga gratuita antes que acabe.
+                </p>
             </div>
 
-            <div class="space-y-4">
+            <div class="bg-[#1f2937] border border-gray-700 rounded-2xl p-5 mb-8 space-y-4">
+                <h3 class="text-center text-sm font-bold text-gray-200 uppercase tracking-wide">Depoimentos Recentes</h3>
+                <div class="flex items-start gap-3">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" class="w-10 h-10 rounded-full border-2 border-gray-600">
+                    <div>
+                        <p class="text-sm font-semibold text-white">Marcos Silva</p>
+                        <p class="text-xs text-gray-400">"97% é real mesmo! Fiz R$200 em 1 hora seguindo o timing. Top!"</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" class="w-10 h-10 rounded-full border-2 border-gray-600">
+                    <div>
+                        <p class="text-sm font-semibold text-white">Ana Costa</p>
+                        <p class="text-xs text-gray-400">"O pop up de ganhos me motivou, entrei e não me arrependo. Recomendo."</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="space-y-5">
                 <a href="https://t.me/tipswinlinebot?start=cmmtupst702f8jv07u388g78k" 
                    onclick="fbq('track', 'Lead');"
-                   class="cta-button w-full py-5 rounded-2xl text-white font-extrabold text-lg flex items-center justify-center gap-3 shadow-lg uppercase tracking-wider text-center block">
-                    <i data-lucide="zap" class="w-6 h-6"></i>
-                    INICIAR NO CHAT AGORA
+                   class="cta-button w-full py-6 rounded-2xl text-white font-extrabold text-xl flex items-center justify-center gap-3 shadow-lg uppercase tracking-wider text-center block">
+                    <i data-lucide="zap" class="w-7 h-7"></i>
+                    QUERO MINHA VAGA GRATUITA AGORA
                 </a>
 
-                <p class="text-center text-xs text-gray-400 font-medium">
-                    ✅ 100% gratuito • 💬 Acesso imediato pelo Telegram
+                <p class="text-center text-xs text-gray-500 font-medium">
+                    💬 Acesso imediato pelo Telegram • Sem fidelidade
                 </p>
 
-                <div class="bg-red-50 border border-red-100 p-3 rounded-2xl">
-                    <p class="text-center text-[11px] text-red-600 font-bold uppercase tracking-tight">
-                        ⚠️ VAGAS DE HOJE QUASE ESGOTADAS
+                <div class="bg-red-950 border border-red-900 p-4 rounded-2xl">
+                    <p class="text-center text-xs text-red-300 font-bold uppercase tracking-tight">
+                        ⚠️ ATENÇÃO: SÓ RESTAM 7 VAGAS PARA O GRUPO VIP DE HOJE!
                     </p>
                 </div>
 
-                <div class="text-center text-xs text-gray-500 font-semibold">
-                    🔥 1.583 pessoas entraram nas últimas 24 horas
+                <div class="text-center text-sm text-gray-400 font-semibold flex items-center justify-center gap-2">
+                    <i data-lucide="users" class="w-5 h-5 text-green-400"></i>
+                    🔥 1.583 pessoas lucraram nas últimas 24 horas
                 </div>
 
-                <div class="text-center text-xs text-yellow-600 font-semibold">
-                    ⭐ Avaliação média: 4.9 / 5
+                <div class="text-center text-sm text-yellow-500 font-semibold">
+                    ⭐ Avaliação média: 4.9 / 5 (Baseada em 3.201 avaliações)
                 </div>
             </div>
 
@@ -126,34 +161,41 @@
 
     </div>
 
+    <div id="popup" class="popup">
+        <div class="flex items-center gap-3">
+            <i data-lucide="check-circle" class="w-8 h-8 text-green-500"></i>
+            <div>
+                <span id="popupText"></span>
+                <p class="text-xs text-gray-500">Acabou de receber um sinal!</p>
+            </div>
+        </div>
+    </div>
+
     <script>
-        // Inicializa os ícones do Lucide
         lucide.createIcons();
 
-        // Popup de prova social simulada (opcional)
+        // Popup de prova social simulada de ganhos
         setTimeout(() => {
-            const names = ['Pedro', 'Lucas', 'Mariana', 'André', 'Ricardo', 'João'];
+            const names = ['Pedro', 'Lucas', 'Mariana', 'André', 'Ricardo', 'João', 'Felipe', 'Beatriz'];
+            const gains = ['R$50', 'R$120', 'R$300', 'R$75', 'R$250', 'R$90', 'R$180', 'R$400'];
             const popup = document.getElementById('popup');
             const popupText = document.getElementById('popupText');
             
             function showPopup() {
                 const name = names[Math.floor(Math.random() * names.length)];
-                popupText.innerHTML = `✅ <b>${name}</b> acabou de lucrar no VIP!`;
+                const gain = gains[Math.floor(Math.random() * gains.length)];
+                popupText.innerHTML = `✅ <b>${name}</b> lucrou <span class="text-green-600 font-bold">${gain}</span> no VIP!`;
                 popup.style.display = 'block';
                 
                 setTimeout(() => {
                     popup.style.display = 'none';
-                }, 4000);
+                }, 5000); // Mostra por 5 segundos
             }
 
-            setInterval(showPopup, 12000);
-            showPopup();
+            setInterval(showPopup, 15000); // Mostra a cada 15 segundos
+            showPopup(); // Mostra o primeiro popup após 3 segundos
         }, 3000);
     </script>
-
-    <div id="popup" class="popup">
-        <span id="popupText"></span>
-    </div>
 
 </body>
 </html>
