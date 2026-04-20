@@ -8,7 +8,7 @@
 
 <script src="https://cdn.tailwindcss.com"></script>
 
-<!-- PIXEL CORRETO -->
+<!-- PIXEL -->
 <script>
 !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){
 n.callMethod? n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -23,56 +23,85 @@ fbq('track', 'PageView');
 
 <style>
 body {
-    font-family: Arial;
-    background: linear-gradient(180deg,#0a0a0a,#000);
+    background: radial-gradient(circle at top, #0a0a0a, #000);
     color: white;
+    font-family: Arial;
 }
 
 .cta {
     background: linear-gradient(90deg,#22c55e,#4ade80);
-    padding: 16px;
-    border-radius: 14px;
+    padding: 18px;
+    border-radius: 16px;
     font-weight: bold;
     text-align: center;
     display: block;
-    margin-top: 15px;
+    font-size: 18px;
+    transition: .3s;
+}
+
+.cta:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 25px rgba(34,197,94,.4);
+}
+
+.card {
+    background: #111;
+    border: 1px solid #222;
 }
 </style>
 
 </head>
 
-<body class="flex justify-center items-center min-h-screen p-4">
+<body class="flex justify-center items-center min-h-screen px-4">
 
-<div class="max-w-md w-full text-center">
+<div class="max-w-md w-full space-y-6 text-center">
 
-<h1 class="text-3xl font-bold mb-3">
+<!-- HEADLINE -->
+<h1 class="text-3xl font-extrabold leading-tight">
 🚀 MÉTODO AVIATOR COLOMBIA
 </h1>
 
-<p class="text-lg text-green-400 font-bold mb-4">
+<p class="text-green-400 font-bold text-lg">
 Convierte $10 en $300 en pocas horas
 </p>
 
-<p class="text-sm text-gray-400 mb-6">
-Señales en vivo • Horarios exactos • Funciona desde el celular
+<p class="text-gray-400 text-sm">
+Señales en vivo • Horarios exactos • Funciona desde tu celular
 </p>
 
-<img src="https://i.imgur.com/6X4ZQ9Q.png" class="rounded-xl mb-6">
+<!-- IMAGEM (AGORA FUNCIONANDO) -->
+<img src="https://i.imgur.com/8Km9tLL.png" 
+class="rounded-xl w-full border border-gray-800 shadow-lg">
 
-<!-- BOTÃO COM LEAD -->
+<!-- PROVA SOCIAL -->
+<div class="card p-4 rounded-xl text-left text-sm space-y-2">
+    <p>💬 “Entré ayer y ya retiré $120”</p>
+    <p>💬 “Las señales son reales, no es humo”</p>
+    <p>💬 “Funciona, solo hay que seguirlas”</p>
+</div>
+
+<!-- BENEFÍCIOS -->
+<div class="text-sm text-gray-300 space-y-2 text-left">
+    <p>✅ Señales 24/7</p>
+    <p>✅ No necesitas experiencia</p>
+    <p>✅ Funciona desde cualquier celular</p>
+</div>
+
+<!-- CTA -->
 <a href="https://t.me/aviadorsecretobot"
 onclick="fbq('track','Lead');"
 class="cta">
 👉 ENTRAR AL GRUPO PRIVADO
 </a>
 
-<p class="text-xs text-gray-500 mt-3">
+<p class="text-xs text-gray-500">
 ✅ Acceso inmediato • 100% gratis
 </p>
 
-<div class="mt-6 text-red-400 text-sm font-bold">
+<!-- URGÊNCIA -->
+<p class="text-red-500 text-sm font-bold">
 ⚠️ CUPOS LIMITADOS HOY
-</div>
+</p>
 
 </div>
 
